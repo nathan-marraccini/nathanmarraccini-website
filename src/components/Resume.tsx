@@ -43,7 +43,7 @@ const Resume = () => {
           <li>Point of Contact for the design and execution of the client’s CPRA Right to Correct Process.</li>
           <li>Utilized SQL to query data for compliance purposes and managed reporting metrics for the DEPO Governance team.</li>
         </ul>
-        <p><strong>Business Development Representative (December 2022 – Present)</strong></p>
+        <p><strong>Business Development Representative (December 2022 – August 2023)</strong></p>
         <ul>
           <li>Managed strategic outreach and advertising for a $25-million account while fulfilling billable consulting responsibilities.</li>
           <li>Executed strategic campaigns on cloud architecture, data engineering, and data pipeline management.</li>

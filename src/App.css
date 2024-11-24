@@ -1,42 +1,47 @@
-/* src/App.css */
+/* Base Styles */
 html, body {
   margin: 0; /* Remove default browser margins */
   padding: 0; /* Remove default padding */
   height: 100%; /* Ensure body takes up the full viewport height */
-  background-color: rgba(22, 22, 134, 0.751) !important; /* Set the blue background */
-  color: white; /* Optional: Make text readable */
+  background-color: rgba(70, 70, 74, 0.751) !important; /* Set the dark background */
+  color: white; /* Make text readable */
+  font-family: Arial, sans-serif; /* Optional: Set a clean font */
 }
 
+/* Main container for the app */
 .app-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align content to the top of the page */
+  align-items: flex-start; /* Align content to the top */
   padding: 20px;
   min-height: 100vh; /* Ensure container covers the full viewport */
 }
 
+/* Main layout: Desktop styles */
 .main-layout {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Horizontal layout */
   gap: 20px;
   width: 80%;
   align-items: flex-start; /* Align children to the top */
 }
 
-
 /* Resume Section */
 .resume-section {
   flex: 3; /* Larger area for the resume */
-  background-color: #fff;
+  background-color: #dcd9d9; /* Light background for contrast */
+  color: #333; /* Darker text for readability */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 10px solid rgb(23, 139, 23); /* Green border */
 }
 
-
+/* Bio Section */
 .bio-section {
   flex: 1; /* Smaller area for the bio */
-  background-color: #fff;
+  background-color: #dcd9d9;
+  color: #333; /* Darker text for readability */
   display: flex;
   flex-direction: column; /* Stack children vertically */
   justify-content: flex-start; /* Align items to the top */
@@ -44,5 +49,30 @@ html, body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  min-height: 100%; /* Ensure it takes full height of parent */
+  border: 10px solid rgb(23, 139, 23); /* Green border */
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    width: 100%; /* Full width for mobile */
+    gap: 10px; /* Reduce spacing */
+  }
+
+  .resume-section,
+  .bio-section {
+    flex: none; /* Remove flex-grow */
+    width: 100%; /* Take up full width on mobile */
+    padding: 15px; /* Reduce padding */
+    border-width: 5px; /* Thinner borders on smaller screens */
+  }
+
+  .resume-section {
+    order: 2; /* Show the resume below the bio */
+  }
+
+  .bio-section {
+    order: 1; /* Show the bio first */
+  }
 }

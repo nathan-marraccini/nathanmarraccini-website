@@ -16,7 +16,7 @@
   border-radius: 100%; /* Makes the "hole" circular */
   overflow: hidden; /* Ensures the image stays within the circle */
   position: relative; /* Allows positioning of the image inside */
-  border: 10px solid #19178c; /* Circle border */
+  border: 10px solid rgba(70, 70, 74, 0.751); /* Circle border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
 
