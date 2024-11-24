@@ -5,6 +5,7 @@ import './Resume.css'; // Optional for styling
 const Resume = () => {
   return (
     <div className="resume-container">
+      <h2>***Not pretty right now but I'll fix it up***</h2>
       <h1>My Resume</h1>
       
       <section>

@@ -30,11 +30,10 @@ const Bio = () => {
       <div>
         <h1 style={{ textAlign: 'center' }}>About Me</h1>
         <p style={{ textAlign: 'center' }}>
-          I have always wanted to have my own website!
+          I have always wanted to have my own website so I decided to build one.
         </p>
         <p style={{fontSize: '16px' }}>
-          This is the second paragraph, perhaps about my hobbies or interests.
-          Each paragraph should be a coherent block of text.
+          Work in progress
         </p>
       </div>
     </div>
