@@ -1,0 +1,48 @@
+/* src/App.css */
+html, body {
+  margin: 0; /* Remove default browser margins */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure body takes up the full viewport height */
+  background-color: rgba(22, 22, 134, 0.751) !important; /* Set the blue background */
+  color: white; /* Optional: Make text readable */
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the top of the page */
+  padding: 20px;
+  min-height: 100vh; /* Ensure container covers the full viewport */
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 80%;
+  align-items: flex-start; /* Align children to the top */
+}
+
+
+/* Resume Section */
+.resume-section {
+  flex: 3; /* Larger area for the resume */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.bio-section {
+  flex: 1; /* Smaller area for the bio */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 100%; /* Ensure it takes full height of parent */
+}

@@ -1,0 +1,50 @@
+/* src/components/Bio.css */
+.resume-container {
+  text-align: center;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-picture {
+  width: 120px; /* Fixed size for the circular "hole" */
+  height: 120px; /* Matches width for the circle */
+  border-radius: 100%; /* Makes the "hole" circular */
+  overflow: hidden; /* Ensures the image stays within the circle */
+  position: relative; /* Allows positioning of the image inside */
+  border: 10px solid #19178c; /* Circle border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.profile-picture img {
+  position: absolute; /* Enables precise positioning */
+  top: 50%; /* Start positioning from the center vertically */
+  left: 50%; /* Start positioning from the center horizontally */
+  transform: translate(-50%, -50%) scale(4); /* Centers and enlarges the image */
+  width: auto; /* Maintains the image's aspect ratio */
+  height: 27%; /* Enlarges the image while filling the circle */
+  object-fit: cover; /* Ensures the image fills the circle without distortion */
+}
+
+.content h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.contact-info {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.contact-info i {
+  margin-right: 5px;
+}
+
+.main-content {
+  margin-top: 20px;
+}

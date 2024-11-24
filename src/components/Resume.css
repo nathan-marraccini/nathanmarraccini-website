@@ -1,0 +1,17 @@
+/* src/components/Resume.css */
+.resume-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
