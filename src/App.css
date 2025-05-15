@@ -20,36 +20,38 @@ html, body {
 /* Main layout: Desktop styles */
 .main-layout {
   display: flex;
-  flex-direction: row; /* Horizontal layout */
+  flex-direction: row;
   gap: 20px;
-  width: 80%;
-  align-items: flex-start; /* Align children to the top */
+  width: 90%;
+  align-items: flex-start;
+  margin-left: -5%; /* Move the entire layout slightly to the left */
 }
 
 /* Resume Section */
 .resume-section {
-  flex: 3; /* Larger area for the resume */
-  background-color: #dcd9d9; /* Light background for contrast */
-  color: #333; /* Darker text for readability */
+  flex: 4; /* Increased from 3 to 4 */
+  background-color: #dcd9d9;
+  color: #333;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 10px solid rgb(23, 139, 23); /* Green border */
+  border: 10px solid rgb(23, 139, 23);
 }
 
 /* Bio Section */
 .bio-section {
-  flex: 1; /* Smaller area for the bio */
+  flex: 0.8; /* Decreased from 1 to 0.8 */
   background-color: #dcd9d9;
-  color: #333; /* Darker text for readability */
+  color: #333;
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  justify-content: flex-start; /* Align items to the top */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 10px solid rgb(23, 139, 23); /* Green border */
+  border: 10px solid rgb(23, 139, 23);
+  margin-left: 2%; /* Add some margin to move it more to the left */
 }
 
 /* Responsive Styles for Mobile */

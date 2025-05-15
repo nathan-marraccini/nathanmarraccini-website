@@ -1,17 +1,65 @@
 /* src/components/Resume.css */
+.resume-outer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 .resume-container {
     max-width: 800px;
-    margin: auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 2rem;
     font-family: Arial, sans-serif;
+}
+
+.resume-container section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4CAF50;
+}
+
+.resume-container h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.resume-container h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.resume-container h3 {
+    color: #34495e;
+    margin-top: 1.5rem;
+}
+
+.resume-container ul {
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.resume-container li {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.resume-container p {
+    margin: 0.5rem 0;
     line-height: 1.6;
-  }
-  
-  h1, h2 {
-    color: #333;
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
+}
+
+.resume-container strong {
+    color: #2c3e50;
+}
+
+.resume-container em {
+    color: #7f8c8d;
+}
   
