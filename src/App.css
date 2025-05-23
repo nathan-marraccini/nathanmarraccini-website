@@ -22,17 +22,17 @@ html, body {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  width: 90%;
+  width: 95%; /* Controls overall width of both sections */
   align-items: flex-start;
-  margin-left: -5%; /* Move the entire layout slightly to the left */
+  margin-left: -5%; /* Moves everything slightly left */
 }
 
 /* Resume Section */
 .resume-section {
-  flex: 4; /* Increased from 3 to 4 */
+  flex: 4; /* Controls relative width - larger number = more space */
   background-color: #dcd9d9;
   color: #333;
-  padding: 20px;
+  padding: 20px; /* Controls internal spacing */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 10px solid rgb(23, 139, 23);
@@ -40,41 +40,61 @@ html, body {
 
 /* Bio Section */
 .bio-section {
-  flex: 0.8; /* Decreased from 1 to 0.8 */
+  flex: 0.90; /* Controls relative width - smaller number = less space */
   background-color: #dcd9d9;
   color: #333;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px;
+  padding: 20px; /* Controls internal spacing */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 10px solid rgb(23, 139, 23);
-  margin-left: 2%; /* Add some margin to move it more to the left */
+  margin-left: 2%; /* Moves bio section more to the left */
 }
 
 /* Responsive Styles for Mobile */
 @media (max-width: 768px) {
   .main-layout {
-    flex-direction: column; /* Stack elements vertically on mobile */
-    width: 100%; /* Full width for mobile */
-    gap: 10px; /* Reduce spacing */
+    flex-direction: column;
+    width: 95%;
+    gap: 15px;
+    margin-left: 0;
   }
 
   .resume-section,
   .bio-section {
-    flex: none; /* Remove flex-grow */
-    width: 100%; /* Take up full width on mobile */
-    padding: 15px; /* Reduce padding */
-    border-width: 5px; /* Thinner borders on smaller screens */
+    flex: none;
+    width: 100%;
+    padding: 15px;
+    border-width: 5px;
+    margin-left: 0;
   }
 
   .resume-section {
-    order: 2; /* Show the resume below the bio */
+    order: 2;
   }
 
   .bio-section {
-    order: 1; /* Show the bio first */
+    order: 1;
+  }
+
+  .app-container {
+    padding: 10px;
   }
 }
+
+/* Additional breakpoint for very small devices */
+@media (max-width: 480px) {
+  .main-layout {
+    width: 100%;
+  }
+
+  .resume-section,
+  .bio-section {
+    padding: 10px;
+    border-width: 3px;
+  }
+}
+

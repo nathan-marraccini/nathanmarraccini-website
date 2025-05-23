@@ -43,10 +43,10 @@ const Resume = () => {
                 Helping build out the sales motion for Growth and Starter Plan
                 customers ($5M+ in combined ARR and annualized MRR)
               </li>
-              <li>110% quota attainment in 2025</li>
+              <li>112% quota attainment across Q4 '24 and Q1 '25</li>
               <li>
-                Built out reporting using GCP BiqQuery for Growth sales reps reps to monitor
-                account credit usage.
+                Built out reporting using GCP BiqQuery for Growth Sales reps to
+                monitor and promote account level credit usage.
               </li>
             </ul>
             <p>
@@ -71,7 +71,7 @@ const Resume = () => {
                 Consumer Privacy Act (CCPA) obligations.
               </li>
               <li>
-                Built process documentation and forms to keep an international
+                Built process documentation and dashboards to keep an international
                 bank compliant with new CPRA laws and regulations.
               </li>
               <li>
@@ -135,8 +135,9 @@ const Resume = () => {
           <section>
             <h2>Skills and Interests</h2>
             <p>
-              Sales, Computer Vision, SQL, Python, Supabase scikit-learn, Amazon Web Services
-              (RDS, S3, Lambda, CloudWatch Events, IAM Policy)
+              Sales (Usage Based) • Computer Vision • Dashboarding • SQL •
+              Python • AWS Cloud • Javascript • React • Docker • Supabase •
+              Roboflow • OpenCV • Git
             </p>
           </section>
         </div>

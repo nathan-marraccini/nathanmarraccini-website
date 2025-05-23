@@ -8,11 +8,11 @@ const Bio = () => {
     <div className="bio-outer-container">
       <div className="bio-card">
         <div className="profile-picture">
-          <img src={profilePic} alt="Profile"/>
+          <img src={profilePic} alt="Profile" />
         </div>
         <div className="bio-content">
           <h2 className="bio-name">Nathan Marraccini</h2>
-          <p className="bio-title">Product Specialist @ Roboflow</p>
+          <p className="bio-title">Growth Account Executive @ Roboflow</p>
           <div className="contact-info">
             <a href="mailto:njmarraccini@gmail.com" className="contact-link">
               <i className="fas fa-envelope"></i>
@@ -33,10 +33,20 @@ const Bio = () => {
       <div className="about-section">
         <br />
         <h1>About Me</h1>
-        <p>
-          I have always wanted to have my own website so I decided to build one.
-        </p>
-        <p className="wip-text">Work in progress</p>
+        <div className="about-content">
+          <p>
+            I'm a Growth Account Executive at Roboflow, combining computer vision expertise
+            with sales to help businesses deploy AI solutions at scale.
+            My background in Industrial Engineering from Virginia Tech, with a
+            passion for building tech projects like the Guinness Split the G Scorer
+            (90k+ user submissions).
+          </p>
+          <p>
+            When I'm not working, you'll find me on the basketball
+            courts in Lower East Side, bird watching, hanging out with friends, or going for runs around NYC. Always excited
+            to tackle new challenges and learn something new.
+          </p>
+        </div>
       </div>
     </div>
   );

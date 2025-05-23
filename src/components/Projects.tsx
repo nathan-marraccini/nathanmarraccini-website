@@ -7,29 +7,41 @@ const Projects = () => {
   return (
     <div className="projects-container">
       <section>
-        <h2>Guinness SplitScorer (SplitTheG.dev)</h2>
+        <h2>
+          Guinness SplitScorer (
+          <a
+            href="https://splittheg.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            splittheg.dev
+          </a>
+          )
+        </h2>
         <p>
           <em>Personal Project</em>
         </p>
         <p>
-          <strong>Users: 90,000+ • Countries: 75+</strong>
+          <strong>Submissions: 90,000+ • Countries: 75+</strong>
         </p>
-        <p>
-          Built a React single-page app that uses computer vision to analyze and
-          score the quality of Guinness "splits" in real time
-        </p>
-        <p>
-          Integrated Supabase for authentication, real-time database, storage,
-          and edge functions; deployed globally on Fly.io to maintain sub-second
-          latency
-        </p>
-        <p>
-          Designed and trained a custom CV model (TensorFlow/PyTorch) to process
-          user-uploaded video frames and compute pour-quality scores
-        </p>
+        <ul>
+          <li>
+            Built a React app that uses computer vision to analyze and score the
+            quality of Guinness "splits" in real time
+          </li>
+          <li>
+            Integrated Supabase for real-time database, storage, and edge
+            functions; deployed globally on Fly.io
+          </li>
+          <li>
+            Designed and trained a custom CV model to process user-uploaded
+            pictures of Guinness pours and displayed a score for how well they
+            split the G
+          </li>
+        </ul>
         <p>
           <strong>Technologies:</strong> React · Supabase · Fly.io · Python ·
-          OpenCV · TensorFlow/PyTorch · Docker · JavaScript
+          OpenCV · Roboflow · Docker · JavaScript
         </p>
       </section>
 
@@ -77,9 +89,7 @@ const Projects = () => {
 
       <section>
         <h2>Bitcoin Analysis and Visualization</h2>
-        <p>
-          <em>March 2023 - Present</em>
-        </p>
+        <em>Personal Project</em>
         <ul>
           <li>
             Developed a data pipeline using AWS Lambda and Beautiful Soup to
@@ -94,16 +104,16 @@ const Projects = () => {
 
       <section>
         <h2>NBA Game Predictions</h2>
-        <p>
-          <em>December 2022 - April 2023</em>
-        </p>
+        <em>Personal Project</em>
         <ul>
           <li>
             Scraped data for 2460 NBA games and used scikit-learn's
-            RandomForestClassifier for prediction
+            RandomForestClassifier to create a model that predicted the outcome
+            of each game ATS (against the spread).
           </li>
           <li>
-            Achieved 61% accuracy against the spread by the end of the season
+            Achieved 61% accuracy against the spread by the end of the season,
+            running the model on a daily basis and against 53 games total.
           </li>
         </ul>
       </section>
