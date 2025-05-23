@@ -73,3 +73,28 @@
   margin-bottom: 1rem;
   text-align: left;
 }
+
+.bio-content {
+  text-align: center;
+  width: 100%;
+}
+
+.bio-name {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.bio-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
