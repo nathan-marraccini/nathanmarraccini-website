@@ -1,100 +1,18 @@
-/* Base Styles */
-html, body {
-  margin: 0; /* Remove default browser margins */
-  padding: 0; /* Remove default padding */
-  height: 100%; /* Ensure body takes up the full viewport height */
-  background-color: rgba(70, 70, 74, 0.751) !important; /* Set the dark background */
-  color: white; /* Make text readable */
-  font-family: Arial, sans-serif; /* Optional: Set a clean font */
+/* App Container */
+.app {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-/* Main container for the app */
-.app-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align content to the top */
-  padding: 20px;
-  min-height: 100vh; /* Ensure container covers the full viewport */
+main {
+  width: 100%;
+  padding-bottom: 150px;
 }
 
-/* Main layout: Desktop styles */
-.main-layout {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  width: 95%; /* Controls overall width of both sections */
-  align-items: flex-start;
-  margin-left: -5%; /* Moves everything slightly left */
-}
-
-/* Resume Section */
-.resume-section {
-  flex: 4; /* Controls relative width - larger number = more space */
-  background-color: #dcd9d9;
-  color: #333;
-  padding: 20px; /* Controls internal spacing */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 10px solid rgb(23, 139, 23);
-}
-
-/* Bio Section */
-.bio-section {
-  flex: 0.90; /* Controls relative width - smaller number = less space */
-  background-color: #dcd9d9;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px; /* Controls internal spacing */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 10px solid rgb(23, 139, 23);
-  margin-left: 2%; /* Moves bio section more to the left */
-}
-
-/* Responsive Styles for Mobile */
 @media (max-width: 768px) {
-  .main-layout {
-    flex-direction: column;
-    width: 95%;
-    gap: 15px;
-    margin-left: 0;
-  }
-
-  .resume-section,
-  .bio-section {
-    flex: none;
-    width: 100%;
-    padding: 15px;
-    border-width: 5px;
-    margin-left: 0;
-  }
-
-  .resume-section {
-    order: 2;
-  }
-
-  .bio-section {
-    order: 1;
-  }
-
-  .app-container {
-    padding: 10px;
-  }
-}
-
-/* Additional breakpoint for very small devices */
-@media (max-width: 480px) {
-  .main-layout {
-    width: 100%;
-  }
-
-  .resume-section,
-  .bio-section {
-    padding: 10px;
-    border-width: 3px;
+  main {
+    padding-bottom: 200px;
   }
 }
 
