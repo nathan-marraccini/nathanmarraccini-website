@@ -1,31 +1,23 @@
 import React from 'react';
-import './Section.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="content-section alt-bg">
-      <div className="section-container">
-        <h2 className="section-title">Get In Touch</h2>
-        <div className="contact-content">
-          <p className="contact-intro">
-            I'm always excited to connect with new people and explore opportunities.
-            Feel free to reach out!
-          </p>
-          <div className="contact-links">
-            <a href="mailto:njmarraccini@gmail.com" className="contact-link">
-              <i className="fas fa-envelope"></i>
-              <span>njmarraccini@gmail.com</span>
-            </a>
-            <a href="tel:434-473-0430" className="contact-link">
-              <i className="fas fa-phone"></i>
-              <span>434-473-0430</span>
-            </a>
-            <div className="contact-link">
-              <i className="fas fa-map-marker-alt"></i>
-              <span>New York City</span>
-            </div>
-          </div>
+    <section className="section section--tint contact" id="contact">
+      <div className="wrap reveal">
+        <p className="kicker">No. 05 &mdash; Correspondence</p>
+        <h2 className="contact__title">Get in <em>touch</em></h2>
+        <p className="contact__intro">
+          I&rsquo;m always excited to connect with new people and explore opportunities. Feel free to reach out!
+        </p>
+        <a className="contact__email" href="mailto:njmarraccini@gmail.com">njmarraccini@gmail.com</a>
+        <div className="contact__row">
+          <a href="tel:434-473-0430">434&ndash;473&ndash;0430</a>
+          <span className="dot" aria-hidden="true">•</span>
+          <span>New York City</span>
+          <span className="dot" aria-hidden="true">•</span>
+          <a href="https://www.linkedin.com/in/nathan-marraccini/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span className="dot" aria-hidden="true">•</span>
+          <a href="https://github.com/nathan-marraccini" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </section>
