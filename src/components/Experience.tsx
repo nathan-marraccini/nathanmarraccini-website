@@ -44,7 +44,7 @@ const experiences: Company[] = [
         title: 'User Success',
         period: 'September 2023 — October 2024',
         achievements: [
-          'Fancy name for an SDR. I worked outbound before taking over the entire inbound segment (15k DAU).',
+          'Fancy name for an SDR. Ran outbound and inbound simultaneously — prospecting net-new accounts while owning the entire inbound segment (15k DAU).',
           '131% quota attainment over my tenure.',
         ],
       },
