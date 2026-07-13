@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from '../assets/profile_pic.png';
+import profilePic from '../assets/profile_pic_circle.png';
 
 const Hero: React.FC = () => {
   return (

@@ -222,8 +222,9 @@ a:focus-visible, button:focus-visible {
 }
 .hero__photo-frame img {
   width: 100%;
-  aspect-ratio: 4 / 4.6;
-  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  border-radius: 50%;
   filter: sepia(0.28) saturate(0.82) contrast(1.04);
 }
 .hero__caption {
